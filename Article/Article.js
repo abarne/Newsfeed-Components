@@ -85,6 +85,16 @@ const data = [
 		thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+	},
+	{
+		title: 'Titles Are Fun!',
+		date: 'September 4th, 2019',
+		firstParagraph:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, enim odio. Provident corrupti est sapiente aliquam molestias, fugit modi cupiditate totam! Minus totam rem culpa pariatur eligendi nemo nisi minima! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, dolores. Aperiam nostrum perspiciatis dolor explicabo, aliquid odio, est nesciunt consectetur, odit debitis deleniti numquam possimus qui adipisci nisi modi delectus!',
+		secondParagraph:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, enim odio. Provident corrupti est sapiente aliquam molestias, fugit modi cupiditate totam! Minus totam rem culpa pariatur eligendi nemo nisi minima! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, dolores. Aperiam nostrum perspiciatis dolor explicabo, aliquid odio, est nesciunt consectetur, odit debitis deleniti numquam possimus qui adipisci nisi modi delectus!',
+		thirdParagraph:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, enim odio. Provident corrupti est sapiente aliquam molestias, fugit modi cupiditate totam! Minus totam rem culpa pariatur eligendi nemo nisi minima! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, dolores. Aperiam nostrum perspiciatis dolor explicabo, aliquid odio, est nesciunt consectetur, odit debitis deleniti numquam possimus qui adipisci nisi modi delectus!'
 	}
 ];
 
@@ -114,8 +124,8 @@ const data = [
 
 */
 
-{
-	/* <div class="article">
+//{
+/* <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
 
@@ -123,7 +133,7 @@ const data = [
 
     <span class='expandButton'></span>
   </div> */
-}
+//}
 
 function createArticle(title, date, first, second, third) {
 	//define new elements
@@ -159,7 +169,7 @@ function createArticle(title, date, first, second, third) {
 	p2.textContent = first;
 	p3.textContent = second;
 	p4.textContent = third;
-	span.textContent = '\u25BC';
+	span.textContent = '\u25BC \u25B2';
 
 	return article;
 }

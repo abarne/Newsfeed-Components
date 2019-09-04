@@ -144,11 +144,20 @@ function createArticle(title, date, first, second, third) {
 	const p3 = document.createElement('p');
 	const p4 = document.createElement('p');
 	const span = document.createElement('span');
+	const span2 = document.createElement('span');
 
 	//add classes
 	article.classList.add('article');
 	p1.classList.add('date');
 	span.classList.add('expandButton');
+	span2.classList.add('expandButton');
+
+	span2.style.transform = 'translate(60%)';
+	span2.style.fontSize = '20px';
+	span2.style.border = '1px solid black';
+	span2.style.backgroundColor = 'dodgerblue';
+	span2.style.borderRadius = '10px';
+	span2.style.color = 'white';
 
 	//append children
 	article.appendChild(header2);
@@ -157,10 +166,14 @@ function createArticle(title, date, first, second, third) {
 	article.appendChild(p3);
 	article.appendChild(p4);
 	article.appendChild(span);
+	article.appendChild(span2);
 
 	//event listeners
 	span.addEventListener('click', (e) => {
 		article.classList.toggle('article-open');
+	});
+	span2.addEventListener('click', (e) => {
+		article.style.display = 'none';
 	});
 
 	//add text content
@@ -170,6 +183,7 @@ function createArticle(title, date, first, second, third) {
 	p3.textContent = second;
 	p4.textContent = third;
 	span.textContent = '\u25BC \u25B2';
+	span2.textContent = 'close';
 
 	return article;
 }
